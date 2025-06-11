@@ -1,0 +1,262 @@
+body{
+    font: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 1050px;
+/*    border: 1px solid grey;*/
+    margin: 0 auto;
+}
+#header{
+    height: 100px;
+    padding: 10px 0;
+}
+#brand{
+    float: left;
+}
+
+h1 a{
+    font-size:50px;
+    font-weight:100;
+    color: #861BBF;
+    text-decoration: none;
+}
+
+#searchBox{
+    float: right;
+    background: linear-gradient(#E4F289,#B7E953);
+    background: -webkit-linear-gradient(#E4F289,#B7E953);
+    background: -o-linear-gradient(#E4F289,#B7E953);
+    background: -moz-linear-gradient(#E4F289,#B7E953);
+    width: 400px;
+    height: 50px;
+    padding: 20px 20px 0 20px;
+    margin-top: 20px;
+}
+.text{
+    float: left;
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    color: orange;
+    background: white url(Images/LogoMakr-7yY4hR.png) right center no-repeat;
+    border: 1px solid #c8d03e;
+}
+.submit{
+    float: right;
+    padding: 5px;
+    font-weight:bold;
+    color: white;
+    background: #A751D6;
+    font-size:15px;
+}
+
+.clear{
+    clear: both;
+}
+#menu{
+    height: 70px;
+    background: linear-gradient(#F8F594,#D5D533);
+    background: -webkit-linear-gradient(#F8F594,#D5D533);
+    background: -o-linear-gradient(#F8F594,#D5D533);
+    background: -moz-linear-gradient(#F8F594,#D5D533);
+    padding: 7px 0;
+}
+ul{
+    list-style:none;
+}
+
+#menu ul li{
+    float: left;
+    padding: 0 30px;
+    height: 30px;
+    border-right:1px solid #5d12e7;
+}
+#menu ul li:last-child{
+    border-right: none;
+}
+#menu ul li a{
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color:#5d12e7;
+    line-height: 30px;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+#menu ul li a:hover,#menu ul li a.active{
+    font-size: 20px;
+    font-size: bold;
+    color:#c34fd8;
+}
+#introduction{
+    background: linear-gradient(#E5F2BB,#b7e952);
+    background: -webkit-linear-gradient(#E5F2BB,#b7e952);
+    background: -o-linear-gradient(#E5F2BB,#b7e952);
+    background: -moz-linear-gradient(#E5F2BB,#b7e952);
+    padding: 30px;
+    margin: 16px 0;
+}
+
+#introduction h3{
+    font-size:45px;
+    color: #316901;
+    font-weight:normal;
+}
+#introduction p{
+    font-size: 25px;
+    color: #628F19;
+    text-align:justify;
+}
+
+.sidebar{
+    height:550px;
+    width:450px;
+    border: 1px solid #BAF46F;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+.sidebar h3{
+    color: #B314DB;
+    font-size: 30px;
+}
+#leftsidebar ul li{
+    padding: 4px 0 4px 10px;
+   
+    list-style-image: url(Images/LogoMakr-3ioyFM.png);
+}
+
+#rightsidebar ul li{
+    padding: 17px 0 20px 70px;
+    background: url(Images/LogoMakr-2Vbb04.png) no-repeat left center;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #5d12e7;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+    
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active{
+    text-decoration: none;
+    color: #8314DB;
+    font-size: 23px;
+    font-weight: bold;
+}
+#leftsidebar ul{
+    padding-top: 8px;
+}
+#leftsidebar{
+    float:left;
+}
+#rightsidebar{
+    float:right;
+}
+
+.footer{
+    height: 60px;
+    background: linear-gradient(#F6F390,#D5D533);
+    background: -webkit-linear-gradient(#F6F390,#D5D533);
+    background: -o-linear-gradient(#F6F390,#D5D533);
+    background: -moz-linear-gradient(#F6F390,#D5D533);
+    padding: 10px 30px;
+    margin-top: 15px;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f8f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-heading {
+  background-color: #B7E953;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.auth-box {
+  margin-top: 40px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #B7E953;
+  width: 350px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: #e0f7e9;
+  cursor: pointer;
+  font-weight: bold;
+  color: #B7E953;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab-buttons button.active {
+  background-color: #B7E953;
+  color: white;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form input {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-form button {
+  background-color: #B7E953;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-form button:hover {
+  background-color: #B7E953;
+}
+
+.hidden {
+  display: none;
+}
+#header h1 a {
+  text-decoration: none;
+  color: white;
+}
+.highlight {
+        background-color: yellow;
+        font-weight: bold;
+        padding: 2px;
+}

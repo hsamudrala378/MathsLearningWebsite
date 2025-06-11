@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Private Tutor - Maths Prep</title>
+  <link rel="stylesheet" href="css/styling.css" />
+</head>
+<body>
+  <div id="header">
+    <h1><a href="#">Maths the Fun Way.</a></h1>
+  </div>
+
+  <div id="menu">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="tutorials.html">Online Tutorials</a></li>
+      <li><a href="tutor.html" class="active">Get a private tutor</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+    </ul>
+  </div>
+
+  <div id="introduction">
+    <h2>Get a Private Tutor</h2>
+    <p>Need 1-on-1 help? Our private tutors are highly qualified and ready to help you succeed.</p>
+    <ul>
+      <li>Certified Maths Tutors</li>
+      <li>Flexible Scheduling</li>
+      <li>Affordable Packages</li>
+      <li>Video Call & In-Person Sessions</li>
+    </ul>
+
+    <form id="tutorForm" style="margin-top: 20px;">
+      <input type="text" id="studentName" placeholder="Your Name" required><br><br>
+      <input type="email" id="studentEmail" placeholder="Your Email" required><br><br>
+      <textarea id="tutorMessage" placeholder="What help do you need?" required></textarea><br><br>
+      <button type="submit" style="background-color:#B7E953; padding:10px 20px; border:none; font-size:16px; color:white; cursor:pointer;">Request a Tutor Now</button>
+    </form>
+    <p id="tutorResponse" style="color: green; font-weight: bold;"></p>
+  </div>
+
+  <footer class="footer">
+    <p>© Maths Prep. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const tutorForm = document.getElementById('tutorForm');
+    const tutorResponse = document.getElementById('tutorResponse');
+
+    tutorForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const name = document.getElementById('studentName').value;
+      const email = document.getElementById('studentEmail').value;
+      const message = document.getElementById('tutorMessage').value;
+
+      const res = await fetch('/api/tutor-request', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message })
+      });
+
+      const data = await res.json();
+      tutorResponse.textContent = data.message || 'Tutor request sent!';
+      tutorForm.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Welcome to Maths Prep</title>
+  <link rel="stylesheet" href="css/styling.css" />
+</head>
+<body>
+  <h1 class="main-heading">Welcome to Maths Prep</h1>
+
+  <div class="auth-box">
+    <div class="tab-buttons">
+      <button id="signupTab" class="active">Create Account</button>
+      <button id="loginTab">Sign In</button>
+    </div>
+
+    <!-- Signup Form -->
+    <form id="signupForm" class="auth-form">
+      <input type="text" placeholder="Full Name" id="signupName" required />
+      <input type="email" placeholder="Email" id="signupEmail" required />
+      <input type="password" placeholder="Password" id="signupPassword" required />
+      <input type="password" placeholder="Confirm Password" id="signupConfirm" required />
+      <button type="submit">Create Account</button>
+    </form>
+
+    <!-- Login Form -->
+    <form id="loginForm" class="auth-form hidden">
+      <input type="email" placeholder="Email" id="loginEmail" required />
+      <input type="password" placeholder="Password" id="loginPassword" required />
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
